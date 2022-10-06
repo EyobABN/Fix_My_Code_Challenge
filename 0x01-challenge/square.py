@@ -4,7 +4,7 @@
 """
 
 
-class Square():
+class Square:
     """
         Represents a rectangle with equal sides
     """
@@ -17,11 +17,11 @@ class Square():
             setattr(self, key, value)
 
     def area_of_my_square(self):
-        """ Area of the square """
+        """ Computes the area of the square """
         return self.width * self.height
 
-    def perimeterOfMySquare(self):
-        """ Perimeter of the square """
+    def perimeter_of_my_square(self):
+        """ Computes the perimeter of the square """
         return (self.width * 2) + (self.height * 2)
 
     def __str__(self):
@@ -33,4 +33,4 @@ if __name__ == "__main__":
     s = Square(width=12, height=9)
     print(s)
     print(s.area_of_my_square())
-    print(s.perimeterOfMySquare())
+    print(s.perimeter_of_my_square())
